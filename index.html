@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Arunraj | Portfolio</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Arun Logo.png" alt="Arun Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times " onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hello, I'm <span>ARUNRAJ</span></h1>
+                <p>A Full-Stack Developer</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Arun Profile picture.jpeg" alt="Arunraj Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Arunraj K, a passionate Full Stack Developer and Computer Science student. I specialize
+                        in building responsive and user-friendly web applications using HTML, CSS, JavaScript, and Java.
+                        I enjoy turning ideas into real-world digital solutions and continuously learning new
+                        technologies to improve my development skills.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('edu')">Education</p>
+                        <p class="tab-links" onclick="opentab('certi')">Certification</p>
+                    </div>
+                    <!-- Education -->
+                    <div class="tab-contents active-tab " id="edu">
+                        <ul>
+                            <li><span>Bachelor of Engineering in Computer Science (2021-2025)</span><br>Coimbatore
+                                Institute Of Engineering And Technology</li>
+                            <li><span>HSC (2019-2021)</span><br>Sathappa Govt. Hr Sec School</li>
+                            <li><span>SSLC (2018-2019)</span><br>Vidhya Giri Matric Hr Sec School</li>
+                        </ul>
+                    </div>
+                    <!-- Certification -->
+                    <div class="tab-contents" id="certi">
+                        <ul>
+                            <li><span>Java Full-Stack Web Development</span><br>J-Spiders</li>
+                            <li><span>Front-end Development</span><br>Great Learning</li>
+                            <li><span>Java Programming</span><br>Great Learning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- My Skills -->
+
+    <section id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+
+            <!-- Programming languages -->
+
+            <h2>Programming Languages</h2>
+            <div class="skills-list">
+                <div>
+                    <img src="images/java.png" alt="Java">
+                    <h3>JAVA</h3>
+                </div>
+                <div>
+                    <img src="images/java-script.png" alt="Java">
+                    <h3>JAVA SCRIPT</h3>
+                </div>
+                <div>
+                    <img src="images/mysql.png" alt="Java">
+                    <h3>MY SQL</h3>
+                </div>
+            </div>
+
+            <!-- Web Technology -->
+            <h2>Web Technologies</h2>
+
+            <div class="skills-list">
+                <div>
+                    <img src="images/html-5.png" alt="HTML 5">
+                    <h3>HTML5</h3>
+                </div>
+                <div>
+                    <img src="images/css-3.png" alt="CSS 3">
+                    <h3>CSS 3</h3>
+                </div>
+                <div>
+                    <img src="images/bootstrap.png" alt="bootstrap">
+                    <h3>BOOTSTRAP</h3>
+                </div>
+            </div>
+
+            <!-- Tools & Designs -->
+
+            <h2>Tools & Designs</h2>
+            <div class="skills-list">
+                <div>
+                    <img src="images/excel.png" alt="Excel">
+                    <h3>EXCEL</h3>
+                </div>
+                <div>
+                    <img src="images/github (1).png" alt="GIT">
+                    <h3>GITHUB</h3>
+                </div>
+                <div>
+                    <img src="images/canva-icon.png" alt="CANVA">
+                    <h3>CANVA</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project -->
+
+    <section id="project">
+        <div class="container">
+            <div class="sub-title">
+                My Projects
+            </div>
+            <div class="project-list">
+                <!-- Red Store -->
+                <div class="project">
+                    <img src="images/Web Developer.jpg" alt="">
+                    <div class="layer">
+                        <h3>Red-Store Ecommerce</h3>
+                        <p>The Responsive Ecommerce website for Men's outfit.</p>
+                        <div>
+                            <h4>Stack: </h4>
+                            <p class="Stack">HTML</p>
+                            <p class="Stack">CSS</p>
+                            <p class="Stack">JavaScript</p>
+                        </div>
+                        <a href="https://red-store-e-commerce.vercel.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- Menu -->
+                <div class="project">
+                    <img src="images/Web Developer.jpg" alt="">
+                    <div class="layer">
+                        <h3>Freelance</h3>
+                        <p>Menu card for Treat point Cafe.</p>
+                        <div>
+                            <h4>Stack: </h4>
+                            <p class="Stack">Canva</p>
+                            <p class="Stack">Adobe Express</p>
+                        </div>
+                        <a href="https://drive.google.com/drive/folders/1TT-wc7XrnZdLVm4qL-bbfFXBBoqSQCH-?usp=sharing"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Portfolio -->
+                <div class="project">
+                    <img src="images/Web Developer.jpg" alt="">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>Personal portfolio website to showcase my skills, projects, and contact information.</p>
+                        <div>
+                            <h4>Stack: </h4>
+                            <p class="Stack">HTML</p>
+                            <p class="Stack">CSS</p>
+                            <p class="Stack">JavaScript</p>
+                        </div>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- <a href="" class="btn" onclick="showProjects()" id="seemore-btn">See More</a> -->
+
+            <!-- Hidden Project -->
+            <div class="hidden-projects" id="more-projects">
+                <div class="project-list">
+                    <!-- Tea Shop  -->
+                    <div class="project">
+                        <img src="images/Web Developer.jpg" alt="">
+                        <div class="layer">
+                            <h3>Tea Bench</h3>
+                            <p>The Responsive Landing page for Organic Tea Shop.</p>
+                            <div>
+                                <h4>Stack: </h4>
+                                <p class="Stack">HTML</p>
+                                <p class="Stack">CSS</p>
+                                <p class="Stack">JavaScript</p>
+                            </div>
+                            <a href="https://tea-bench-v9y6.vercel.app/"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Perfumy -->
+                    <div class="project">
+                        <img src="images/Web Developer.jpg" alt="">
+                        <div class="layer">
+                            <h3>Perfumy</h3>
+                            <p>Ecommerce landing Page for perfumes (Under Process).</p>
+                            <div>
+                                <h4>Stack: </h4>
+                                <p class="Stack">HTML</p>
+                                <p class="Stack">CSS</p>
+                                <p class="Stack">JavaScript</p>
+                            </div>
+                            <!-- <a href="https://arunrajkalaiyarasan.github.io/Perfumy/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                        </div>
+                    </div>
+
+                    <!-- Perfumy -->
+                    <div class="project">
+                        <img src="images/Web Developer.jpg" alt="">
+                        <div class="layer">
+                            <h3>Treat Point Cafe</h3>
+                            <p>Responsive Ecommerce Site for Treat Point Cafe.(Under Process)</p>
+                            <div>
+                                <h4>Stack: </h4>
+                                <p class="Stack">HTML</p>
+                                <p class="Stack">CSS</p>
+                                <p class="Stack">JavaScript</p>
+
+                            </div>
+                            <!-- <a href=""><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn" onclick="toggleProjects()" id="seemore-btn">See More</button>
+        </div>
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <a href="">
+                        <p><i class="fa-solid fa-envelope"></i>arunrajkalaiyarasan09@gmail.com</p>
+                    </a>
+                    <a href="">
+                        <p><i class="fa-solid fa-phone"></i>7550351339</p>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/arunraj-k-">
+                        <p><i class="fa-brands fa-linkedin"></i>Arunraj K</p>
+                    </a>
+                    <a href="" class="btn2">View CV</a>
+                    <a href="" class="btn3">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" id="" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <span id="msg"></span>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyrights">
+            <p>© 2026 Arunraj K. All Rights Reserved.</p>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+
+    </script>
+</body>
+
+</html>
